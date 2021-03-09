@@ -1,5 +1,7 @@
 Setting up Appache for EC2 demo
 1. Install Apache on EC2 >> sudo yum -y install httpd.x86_64
-2. Sysctemcel start httpd.service
+2. Systemctl start httpd.service
 3. Systemctl enable httpd.service
 4. Insert a content on /var/www/html folder // echo "Hello World" > /var/www/html/index.html
+5. Open port 80. 
+	From the security group add an inbound rule for tCP port :80
